@@ -19,7 +19,7 @@ class Preset {
       }
       
       Serial.print(seperator);
-      printWithLength(signalNames[type], 10);
+      printWithLength(signalNames[type], 9);
       Serial.print(seperator);
       printWithLength(String(duration), 11);
       Serial.print(seperator);
