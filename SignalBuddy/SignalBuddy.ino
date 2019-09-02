@@ -1,12 +1,8 @@
 /* SIGNAL BUDDY
 
-  TODO:
-  documentation
-  ability to turn on and off PWM modulation
+  Signal generator for Arduino Uno by Richard Warren.
+  Documentation at: https://github.com/rwarren2163/SignalBuddy
   
-  add explicit constructor function in class? okay to add default values here?
-  bad to include header in setup? this allows me to access methods, etc
-  consider volatile, const, etc // when should i be using these guys...
 */
 
 

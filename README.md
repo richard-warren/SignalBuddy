@@ -13,7 +13,7 @@ Connect an LED + resistor to pin 11. Upload `SignalBuddy.ino` to the Arduino and
 Here is what the interface looks like:
 ![](images/serial_interface.png)
 
-Enter **a number** to change the preset, **s** to deliver a signal, and **m** to print the menu. Presets settings can be adjusted by entering the letter in parentheses in the column for the setting. For example, enter **a** to change the amplitude, and **p** the ramp up time for the currently selected stimulus.
+Enter **a number** to change the preset, **s** to deliver a signal, and **m** to print the menu. Preset settings can be adjusted by entering the letter in parentheses in the column for the setting. For example, enter **a** to change the amplitude, and **p** the ramp up time for the currently selected stimulus.
 
 
 
