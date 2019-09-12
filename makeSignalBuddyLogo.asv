@@ -24,9 +24,8 @@ faceHgt = 2.7;
 faceColor = [[3 255 251]*.7/255; [3 255 251]/255];  % start and stop color
 
 % hair
-hairWid = .25;
-hairHgt = .25;
-hairColor = [.8 .8 .8];
+hairWid = .2;
+hairHgt = .25
 
 % eyes
 eyeX = [-.75 .4]+.05;
@@ -52,11 +51,11 @@ earColor = [255 50 0] / 255;
 
 
 
-%% DRAW SIGNALBUDDY
+% DRAW SIGNALBUDDY
 
 % make figure
 close all
-figure('color', 'white', 'position', [200 200 1200 350], 'menubar', 'none'); hold on
+figure('color', 'white', 'position', [200 200 1200 300], 'menubar', 'none'); hold on
 
 % sin
 sigX = linspace(-xWidth/2, xWidth/2, 1000);
@@ -84,13 +83,6 @@ pulsePlot = plot(sigX, pulseY, 'LineWidth', lineWidth(1));
 % ears
 rectangle('position', [-faceWid/2-earWid -earHgt/2 faceWid+2*earWid earHgt], ...
     'LineWidth', lineWidth(1), 'Curvature', .1, 'faceColor', earColor, 'EdgeColor', lineColor);
-% hair
-rectangle('position', [-hairWid/2 0 hairWid faceHgt/2+hairHgt], ...
-    'LineWidth', lineWidth(1), 'Curvature', .1, 'faceColor', hairColor, 'EdgeColor', lineColor);
-rectangle('position', [-hairWid/2-faceWid/4 0 hairWid faceHgt/2+hairHgt], ...
-    'LineWidth', lineWidth(1), 'Curvature', .1, 'faceColor', hairColor, 'EdgeColor', lineColor);
-rectangle('position', [-hairWid/2+faceWid/4 0 hairWid faceHgt/2+hairHgt], ...
-    'LineWidth', lineWidth(1), 'Curvature', .1, 'faceColor', hairColor, 'EdgeColor', lineColor);
 % face
 face = rectangle('position', [-faceWid/2 -faceHgt/2 faceWid faceHgt], ...
                  'LineWidth', lineWidth(1), 'Curvature', .1, 'faceColor', faceColor(1,:), 'EdgeColor', lineColor);
