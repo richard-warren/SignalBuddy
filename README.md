@@ -1,5 +1,7 @@
 # SignalBuddy
 
+![](images/banner.gif)
+
 `SignalBuddy` is an easy-to-make, easy-to-use signal generator for scientific applications. Making friends is hard, but making `SignalBuddy` is easy - all you need is an Arduino Uno! Little to no soldering is required. `SignalBuddy` replaces more complicated and (much) more expensive signal generators in laboratory settings where one millisecond resolution is sufficient. `SignalBuddy` can:
 
 * generate **sin waves**, **step functions**, and **pulse trains**
