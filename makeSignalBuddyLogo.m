@@ -12,7 +12,7 @@ saveVideo = true;
 % gobal
 lineColor = [.2 .2 .2];
 lineWidth = [2 4];  % start and end line widths
-xWidth = 12;
+xWidth = 20;
 
 % signals
 periods = 20;
@@ -21,7 +21,7 @@ sigHgt = .3;
 % face
 faceWid = 1.9;
 faceHgt = 2.7;
-faceColor = [[3 255 251]*.7/255; [3 255 251]/255];  % start and stop color
+faceColor = [[3 255 251]*.6/255; [3 255 251]/255];  % start and stop color
 
 % hair
 hairWid = .25;
