@@ -56,7 +56,8 @@ earColor = [255 50 0] / 255;
 
 % make figure
 close all
-figure('color', 'white', 'position', [200 200 1200 350], 'menubar', 'none'); hold on
+hgtWidRatio = (faceHgt+earHgt) / xWidth;
+figure('color', 'white', 'position', [200 200 1200 1200*hgtWidRatio], 'menubar', 'none'); hold on
 
 % sin
 sigX = linspace(-xWidth/2, xWidth/2, 1000);
