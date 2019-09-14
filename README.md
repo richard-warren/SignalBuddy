@@ -1,6 +1,6 @@
 # SignalBuddy
 
-<p align="center"><img src="images/banner.gif" width="600" height="200"></p>
+![](images/banner.gif)
 <p align="center"><img src="images/SignalBuddy3D.gif" width="200" height="200"></p>
 
 `SignalBuddy` is an easy-to-make, easy-to-use signal generator for scientific applications. Making friends is hard, but making `SignalBuddy` is easy - all you need is an Arduino Uno! Little to no soldering is required. `SignalBuddy` replaces more complicated and (much) more expensive signal generators in laboratory settings where one millisecond resolution is sufficient. `SignalBuddy` can:
