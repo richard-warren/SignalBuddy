@@ -56,8 +56,8 @@ earColor = [255 50 0] / 255;
 
 % make figure
 close all
-hgtWidRatio = (faceHgt+earHgt) / xWidth;
-figure('color', 'white', 'position', [200 200 1200 1200*hgtWidRatio], 'menubar', 'none'); hold on
+hgtWidRatio = (faceHgt+hairHgt)*1.02 / xWidth;
+figure('color', 'white', 'position', [200 200 1000 1000*hgtWidRatio], 'menubar', 'none'); hold on
 
 % sin
 sigX = linspace(-xWidth/2, xWidth/2, 1000);
@@ -109,7 +109,7 @@ y = sin(linspace(0,4*pi,length(x))) * mouthHgt / 2 + mouthY;
 mouth = patch([x fliplr(x)], ...
               [y+mouthOpening(1)/2 fliplr(y)-mouthOpening(1)], ...
               mouseColor, 'edgecolor', lineColor, 'linewidth', lineWidth(1));
-set(gca, 'xlim', [-1 1]*xWidth/2, 'position', [0 0 1 1], 'DataAspectRatio', [1 1 1], 'Visible', 'off')
+set(gca, 'xlim', [-1 1]*xWidth/2, 'ylim', [-faceHgt/2 faceHgt/2+hairHgt]*1.02, 'position', [0 0 1 1], 'DataAspectRatio', [1 1 1], 'Visible', 'off')
 
 
 %% ANIMATE
