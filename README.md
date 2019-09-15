@@ -31,7 +31,9 @@ Signals can be triggered by an external TTL input (a 5V pulse) to **PIN 2**. Sim
 You can adjust / add up to 9 presets by modifying `config.h` and re-uploading the script. Your new presets will appear when you re-open the Serial Monitor.
 
 ## project box
-You can 3D print a custom `SignalBuddy` enclosure using the .stl files in the `enclosure` folder (see 3D animation above). The box is easily mountable, has a snap fit design for both the Arduino and the lid (no screws necessary!), and has convenient BNC ports. More details are available on the [SignalBuddy hackaday page](https://hackaday.io/project/167649-signalbuddy).
+You can 3D print a custom `SignalBuddy` enclosure using the .stl files in the `enclosure` folder (see 3D animation above). The box is easily mountable, has a snap fit design for both the Arduino and the lid (no screws necessary!), and has convenient BNC ports. More details are available on the [SignalBuddy hackaday page](https://hackaday.io/project/167649-signalbuddy). Here is `SignalBuddy` making friends with Lindsey Buckingham:
+
+![](images/lindsey.jpg)
 
 ## how the code works
 There are a few neat tricks that make the signals accurate and the interface easy to use:
