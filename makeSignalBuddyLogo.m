@@ -98,8 +98,8 @@ face = rectangle('position', [-faceWid/2 -faceHgt/2 faceWid faceHgt], ...
 % eyes and pupils
 eyeWid = diff(eyeX)/4;  % eye width
 theta = linspace(3*pi/2, pi, 20);
-px = cos(theta)*pupRad(1);
-py = sin(theta)*pupRad(1);
+px = cos(theta)*mean(pupRad);
+py = sin(theta)*mean(pupRad);
 eyes = patch([eyeX(1) eyeX(2) px+eyeX(2) eyeX(2)-eyeWid eyeX(2)-eyeWid eyeX(2)-2*eyeWid px+eyeX(1)+2*eyeWid eyeX(2)-3*eyeWid eyeX(2)-3*eyeWid eyeX(1)], ...
              [eyeY(1) eyeY(1) py+eyeY(2) eyeY(2) eyeY(1)+eyeThickness eyeY(1)+eyeThickness py+eyeY(2) eyeY(2) eyeY(1)+eyeThickness eyeY(1)+eyeThickness], ...
              eyeColor, 'edgecolor', lineColor, 'linewidth', lineWidth(1));
@@ -107,7 +107,7 @@ eyes = patch([eyeX(1) eyeX(2) px+eyeX(2) eyeX(2)-eyeWid eyeX(2)-eyeWid eyeX(2)-2
 x = linspace(mouthX(1), mouthX(2), 100);
 y = sin(linspace(0,4*pi,length(x))) * mouthHgt / 2 + mouthY;
 mouth = patch([x fliplr(x)], ...
-              [y+mouthOpening(1)/2 fliplr(y)-mouthOpening(1)], ...
+              [y+mean(mouthOpening)/2 fliplr(y)-mean(mouthOpening)], ...
               mouseColor, 'edgecolor', lineColor, 'linewidth', lineWidth(1));
 set(gca, 'xlim', [-1 1]*xWidth/2, 'ylim', [-faceHgt/2 faceHgt/2+hairHgt]*1.02, 'position', [0 0 1 1], 'DataAspectRatio', [1 1 1], 'Visible', 'off')
 saveas(gcf, 'images\banner.png')
