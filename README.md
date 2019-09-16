@@ -1,4 +1,4 @@
-![](images/banner.gif)
+![](images/banner.png)
 # SignalBuddy
 <p align="center"><img src="images/SignalBuddy3D.gif" width="300" height="300"></p>
 

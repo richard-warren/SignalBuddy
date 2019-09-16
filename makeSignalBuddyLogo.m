@@ -21,7 +21,7 @@ sigHgt = .3;
 % face
 faceWid = 1.9;
 faceHgt = 2.7;
-faceColor = [[3 255 251]*.6/255; [3 255 251]/255];  % start and stop color
+faceColor = [[3 255 251]*.8/255; [3 255 251]/255];  % start and stop color
 
 % hair
 hairWid = .25;
@@ -110,6 +110,7 @@ mouth = patch([x fliplr(x)], ...
               [y+mouthOpening(1)/2 fliplr(y)-mouthOpening(1)], ...
               mouseColor, 'edgecolor', lineColor, 'linewidth', lineWidth(1));
 set(gca, 'xlim', [-1 1]*xWidth/2, 'ylim', [-faceHgt/2 faceHgt/2+hairHgt]*1.02, 'position', [0 0 1 1], 'DataAspectRatio', [1 1 1], 'Visible', 'off')
+saveas(gcf, 'images\banner.png')
 
 
 %% ANIMATE
