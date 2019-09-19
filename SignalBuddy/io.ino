@@ -170,6 +170,7 @@ void getUserInput(){
 
       // print menu
       case 'm':
+        while (Serial.available()){Serial.read();} // throw away extra bytes
         showMenu();
 
       
